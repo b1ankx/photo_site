@@ -1,0 +1,1122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,200&display=swap');
+* h1, h2,h3, h4 {
+    font-family: sans-serif;
+}
+* p{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+nav{
+    position: fixed;
+    top: 0;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(203, 203, 203);
+}
+nav a{
+  font-size: 20px;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: inline-block;    
+}
+
+nav a:hover {
+        background: #2c2c2c;
+        color: #fff;
+      }
+
+.first{
+    height: 650px;
+    width: 100%;
+}
+.first::before {
+  content: '';
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: -1;
+  background-image: url(img/imgback.jpg);
+  filter: blur(7px);
+ }
+.first h1{
+    font-size: 150px;
+    font-family: sans-serif;
+    color: aliceblue;
+    position: relative;
+    top: 250px;
+    right: 230px;
+    text-shadow: 7px 7px #353535;
+}
+.first h3{
+    font-size: 90px;
+    font-family: sans-serif;
+    color: rgb(240, 240, 240);
+    position: relative;
+    bottom: 220px;
+    right: 0px;
+    text-shadow: 7px 7px #353535;
+}
+.second{
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+.block{
+    height: 300px;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.title{
+    width: 50%;
+    border-radius: 40px;
+}
+.about{
+    width: 60%;
+    border-radius: 40px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.block h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+
+}
+.block h3{
+    color: rgb(161, 161, 184);
+    font-size: 40px;
+}
+.about p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.three{
+    height: 500px;
+    position: relative;
+    bottom: 170px;
+}
+.three h1{
+    font-size: 40px;
+    margin-bottom: 90px;
+    margin-top: 0;
+}
+.three p{
+    font-size: 20px;
+    width: 50%;
+}
+.wrapper {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  
+  .typing-demo {
+    width: 550px;
+    height: 50px;
+    animation: typing 10s steps(34), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.conteiner{
+height: 500px;
+display: grid;
+grid-template-columns: 350px 350px 350px;
+grid-template-rows: 350px 370px;
+grid-gap: 3rem;
+}
+.box {
+    box-shadow: 6px 10px 20px  rgb(0, 0, 0), 0 6px 6px  rgb(0, 0, 0);
+    color: #a6a6a6;
+    border-radius: 6px;
+    padding: 3px;
+    background-color: #fff;
+  }
+.box h1{
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: black;
+}
+.box p{
+    font-size: 20px;
+    position: relative;
+    bottom: 70px;
+    color: black;
+}
+
+.four{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    position: relative;
+    top: 90px;
+}
+.count{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 20px
+}
+.num{
+    height: 200px;
+    width: 200px;
+    padding: 10px 14px;
+    width: calc(25% - 43px);
+    text-align: center;
+    
+    
+}
+.num h2{
+    font-size: 70px;
+    position: relative;
+    bottom: 30px;
+    color: aliceblue;
+}
+.num p {
+    font-size: 30px;
+    position: relative;
+    bottom: 70px;
+    color: #4c2d85;
+}
+
+ul#albumfotos{
+    width:900px;
+    margin:0;
+    padding:50px;
+    overflow:hidden;
+    list-style:none;
+  }
+  
+  ul#albumfotos li{
+    float:left;
+    width: 200px;
+    height: 200px;
+    margin:10px;
+    border:5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow:1px 1px 3px rgba(0,0,0,.4);
+   -webkit-transition: all .4s ease-in;
+  }
+  ul#albumfotos li:hover{
+    -webkit-transform: scale(1.5);    
+  }
+  
+  ul#albumfotos li span{
+    opacity: 0;
+    color:#ffffff;
+    text-shadow:1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height:370px;
+    padding:5px;
+  }
+
+  ul#albumfotos li#foto01{
+    background-image:url(img/ph1.jpeg);
+    background-position:50% 50%;
+    background-size:400px 400px;
+    background-color: #ffffff;
+  }
+  ul#albumfotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size: 200px 200px;
+    
+  }
+  
+  ul#albumfotos li#foto02{
+    background-image:url(img/ph2.jpeg);
+      background-position:50% 50%;
+    background-size:400px 400px;
+    background-color: #ffffff;
+  }
+  
+  ul#albumfotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size: 200px 200px;
+  }
+  
+  ul#albumfotos li#foto03{
+    background-image:url(img/ph3.jpeg);
+      background-position:50% 50%;
+    background-size:400px 400px;
+    background-color: #ffffff;
+  }
+  
+  ul#albumfotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size: 200px 200px;
+  }
+  
+  ul#albumfotos li#foto04{
+    background-image:url(img/ph4.jpeg);
+    
+  }
+  
+  ul#albumfotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size: 200px 200px;
+  }
+  
+  ul#albumfotos li#foto05{
+    background-image:url(img/ph5.jpeg);
+    background-position:50% 50%;
+    background-size:400px 400px;
+    background-color: #ffffff;
+  }
+  
+  ul#albumfotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size: 200px 200px;
+  }
+  
+  ul#albumfotos li#foto06{
+    background-image:url(img/ph6.jpeg);
+      background-position:50% 50%;
+    background-size:400px 400px;
+    background-color: #ffffff;
+  }
+  
+  ul#albumfotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size: 200px 200px;
+  }
+
+.albumfotos{
+    position: relative;
+    left: 100px;
+}
+.photogalery h2{
+    font-size: 50px;
+    position: relative;
+    top: 60px;
+} 
+.photogalery p{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+} 
+.six{
+    background-color: rgb(148, 148, 148);
+}
+
+.login-box {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  } 
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+  }
+  
+ .login-box .user-box input:focus ~ label{
+    top: -20px;
+    left: 0;
+    color: #4e5fda;
+    font-size: 12px;
+  }  
+  
+.login-box a span {
+    position: absolute;
+    display: block;
+  }
+input{
+    height: 45px;
+    width: 100%;
+    color: #00060f;
+    font-size: 14px;
+    border: 2px solid #03021a; 
+    border-radius: 5px;
+    padding-left: 50px;
+   
+} 
+.forForm{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    /* left: 25%; */
+}
+.help{
+    /* background: rgb(38, 56, 173); */
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    top: 5%;
+}
+.help h1{
+    font-size: 40px;
+}
+.help p{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    width: 768px;
+  }
+nav a{
+  top: 2%;
+  padding: 5px 5px;
+  font-size: 15px;
+
+}
+.logo{
+  width: 120px;
+  right: 5px;
+}
+.first h1{
+  font-size: 70px;
+  right: 50px;
+
+}
+.first h3{
+  font-size: 60px;
+  position: relative;
+  left: -140px;
+
+}
+.second{
+  height: 350px;
+}
+.block h2{
+  font-size: 35px;
+
+}
+.block h3{
+  font-size: 30px;
+}
+.about p{
+  font-size: 15px;
+  margin-left: 20px;
+}
+.three{
+  height: 1500px;
+}
+.three h1{
+  font-size: 20px;
+  margin-bottom: 5px;
+
+}
+.three p{
+  font-size: 20px;
+}
+footer{
+  background-color: #000000;
+}
+.wrapper {
+  height: 30px;
+  bottom: 600px;
+}
+
+.typing-demo {
+  width: 260px;
+  height: 25px;
+  animation: typing 5s steps(33), blink .5s step-end infinite alternate;
+}
+.conteiner{
+grid-template-columns: 300px 300px ;
+grid-template-rows: 200px 200px 200px;
+grid-gap: 20px;
+
+}
+.box img{
+  width: 35px;
+  position: relative;
+  bottom: 30px;
+}
+.box h1{
+  font-size: 10px;
+  bottom: 40px;
+}
+.box p{
+  font-size: 10px;
+  bottom: 30px;
+}
+
+.four{
+  height: 400px;
+   top: 90px;
+}
+.num h2{
+  font-size: 60px;
+  padding: 2px;
+  bottom: 0;
+}
+.num p {
+  font-size: 20px;
+  bottom: 30px;
+}
+
+.five{
+  height: 1200px;
+}
+ul#albumfotos{
+  width:550px;
+  padding:20px;
+}
+
+.albumfotos{
+  position: relative;
+  top: -20px;
+  left: -30px;
+}
+.photogalery{
+  width: 60%;
+}
+.photogalery h2{
+  font-size: 30px;
+  position: relative;
+  top: -10px;
+  left: 40px;
+} 
+.photogalery p{
+  font-size: 15px;
+  position: relative;
+  top: -20px;
+  left: 25px;
+} 
+ 
+
+.login-box {
+  position: absolute;
+  top: -250px;
+  left: 60%;
+  width: 350px;
+}
+
+.login-box h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+} 
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 10px;
+  color: #fff;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label{
+  top: -20px;
+  left: 0;
+  color: #4e5fda;
+  font-size: 12px;
+}  
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+input{
+  height: 25px;
+  width: 100%;
+  color: #00060f;
+  font-size: 14px;
+  border: 2px solid #03021a; 
+  border-radius: 5px;
+  padding-left: 50px;
+ 
+} 
+.forForm{
+  width: 60%;
+  height: 10%;
+  position: relative;
+  top: 110px;
+  right: 100px;
+  background-color: rgb(126,162,168);
+}
+.help{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  top: 5%;
+  margin-left: 10px;
+}
+.help h1{
+  font-size: 30px;
+  margin-left: 10px;
+}
+.help p{
+  font-size: 10px;
+  padding: 15px;
+}
+footer img{
+  background-color: black;
+  margin-bottom: 0;
+  height: 70px;
+  width: 100%;
+}
+}
+@media only screen and (max-width: 480px){
+  body{
+    width: 480px;
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+
+nav a{
+  top: 2%;
+  padding: 5px 5px;
+  font-size: 10px;
+
+}
+.logo{
+  width: 90px;
+  right: 5px;
+}
+.first h1{
+  font-size: 60px;
+  right: 30px;
+
+}
+.first h3{
+  font-size: 50px;
+  left: 60px;
+
+}
+.second{
+  height: 350px;
+}
+.block h2{
+  font-size: 25px;
+
+}
+.block h3{
+  font-size: 20px;
+}
+.about p{
+  font-size: 10px;
+  margin-left: 20px;
+}
+.three{
+  height: 1500px;
+}
+.three h1{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.three p{
+  font-size: 10px;
+}
+.wrapper {
+  height: 30px;
+  bottom: 600px;
+}
+
+.typing-demo {
+  width: 128px;
+  height: 15px;
+  animation: typing 5s steps(33), blink .5s step-end infinite alternate;
+}
+.conteiner{
+grid-template-columns: 250px ;
+grid-template-rows: 200px 200px 200px 200px;
+grid-gap: 15px;
+
+}
+.box img{
+  width: 25px;
+  position: relative;
+  bottom: 30px;
+}
+.box h1{
+  font-size: 10px;
+  bottom: 40px;
+}
+.box p{
+  font-size: 8px;
+  bottom: 30px;
+}
+
+.four{
+
+  height: 120px;
+   top: 90px;
+}
+.num h2{
+  font-size: 30px;
+  padding: 2px;
+  bottom: 0;
+}
+.num p {
+  font-size: 9px;
+  bottom: 30px;
+}
+
+.five{
+  height: 1800px;
+}
+ul#albumfotos{
+  width:350px;
+  padding:20px;
+}
+
+.albumfotos{
+  position: relative;
+  top: -20px;
+  left: -30px;
+}
+.photogalery{
+  width: 60%;
+}
+.photogalery h2{
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  left: 40px;
+} 
+.photogalery p{
+  font-size: 10px;
+  position: relative;
+  top: -20px;
+  left: 25px;
+} 
+ 
+
+
+.login-box {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 250px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  
+}
+
+.login-box h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+} 
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 10px;
+  color: #fff;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label{
+  top: -20px;
+  left: 0;
+  color: #4e5fda;
+  font-size: 12px;
+}  
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+input{
+  height: 25px;
+  width: 100%;
+  color: #00060f;
+  font-size: 14px;
+  border: 2px solid #03021a; 
+  border-radius: 5px;
+  padding-left: 50px;
+ 
+} 
+.forForm{
+  width: 60%;
+  height: 10%;
+  position: relative;
+  top: 110px;
+  right: 100px;
+  background-color: rgb(126,162,168);
+}
+.help{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  top: 5%;
+}
+.help h1{
+  font-size: 20px;
+}
+.help p{
+  font-size: 7px;
+}
+footer img{
+  background-color: black;
+  margin-bottom: 0;
+  height: 70px;
+  width: 100%;
+}
+}
+@media only screen and (max-width: 320px){
+  body{
+    width: 320px;
+    
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+
+nav a{
+  top: 2%;
+  padding: 5px 5px;
+  font-size: 10px;
+
+}
+.logo{
+  width: 90px;
+  right: 5px;
+}
+.first h1{
+  font-size: 60px;
+  right: 30px;
+
+}
+.first h3{
+  font-size: 50px;
+  left: 60px;
+
+}
+.second{
+  height: 350px;
+}
+.block h2{
+  font-size: 25px;
+
+}
+.block h3{
+  font-size: 20px;
+}
+.about p{
+  font-size: 10px;
+  margin-left: 20px;
+}
+.three{
+  height: 1500px;
+}
+.three h1{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.three p{
+  font-size: 10px;
+}
+.wrapper {
+  height: 30px;
+  bottom: 600px;
+}
+
+.typing-demo {
+  width: 128px;
+  height: 15px;
+  animation: typing 5s steps(33), blink .5s step-end infinite alternate;
+}
+.conteiner{
+grid-template-columns: 250px ;
+grid-template-rows: 200px 200px 200px 200px;
+grid-gap: 15px;
+
+}
+.box img{
+  width: 25px;
+  position: relative;
+  bottom: 30px;
+}
+.box h1{
+  font-size: 10px;
+  bottom: 40px;
+}
+.box p{
+  font-size: 8px;
+  bottom: 30px;
+}
+
+.four{
+
+  height: 120px;
+   top: 90px;
+}
+.num h2{
+  font-size: 30px;
+  padding: 2px;
+  bottom: 0;
+}
+.num p {
+  font-size: 9px;
+  bottom: 30px;
+}
+
+.five{
+  height: 1800px;
+}
+ul#albumfotos{
+  width:350px;
+  padding:20px;
+}
+
+.albumfotos{
+  position: relative;
+  top: -20px;
+  left: -30px;
+}
+.photogalery{
+  width: 60%;
+}
+.photogalery h2{
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  left: 40px;
+} 
+.photogalery p{
+  font-size: 10px;
+  position: relative;
+  top: -20px;
+  left: 25px;
+} 
+ 
+
+
+.login-box {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 250px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  
+}
+
+.login-box h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+} 
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 10px;
+  color: #fff;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label{
+  top: -20px;
+  left: 0;
+  color: #4e5fda;
+  font-size: 12px;
+}  
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+input{
+  height: 25px;
+  width: 100%;
+  color: #00060f;
+  font-size: 14px;
+  border: 2px solid #03021a; 
+  border-radius: 5px;
+  padding-left: 50px;
+ 
+} 
+.forForm{
+  width: 60%;
+  height: 10%;
+  position: relative;
+  top: 110px;
+  right: 100px;
+  background-color: rgb(126,162,168);
+}
+.help{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  top: 5%;
+}
+.help h1{
+  font-size: 20px;
+}
+.help p{
+  font-size: 7px;
+}
+footer img{
+  background-color: black;
+  margin-bottom: 0;
+  height: 70px;
+  width: 100%;
+}
+}
